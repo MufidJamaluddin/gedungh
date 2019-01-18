@@ -1,0 +1,55 @@
+# Project: Gedung H
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o vendor/cJSON/cJSON.o components.o config.o window.o skybox.o vendor/SOIL/src/image_DXT.o vendor/SOIL/src/image_helper.o vendor/SOIL/src/SOIL.o vendor/SOIL/src/stb_image_aug.o
+LINKOBJ  = main.o vendor/cJSON/cJSON.o components.o config.o window.o skybox.o vendor/SOIL/src/image_DXT.o vendor/SOIL/src/image_helper.o vendor/SOIL/src/SOIL.o vendor/SOIL/src/stb_image_aug.o
+LIBS     = -L"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc "../../../../Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32/libopengl32.a" "../../../../Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32/libglu32.a" "../../../../Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32/libglut32.a" vendor/SOIL/lib/libSOIL.a -m32
+INCS     = -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = "Gedung H.exe"
+CXXFLAGS = $(CXXINCS) -m32
+CFLAGS   = $(INCS) -m32
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+vendor/cJSON/cJSON.o: vendor/cJSON/cJSON.c
+	$(CPP) -c vendor/cJSON/cJSON.c -o vendor/cJSON/cJSON.o $(CXXFLAGS)
+
+components.o: components.cpp
+	$(CPP) -c components.cpp -o components.o $(CXXFLAGS)
+
+config.o: config.cpp
+	$(CPP) -c config.cpp -o config.o $(CXXFLAGS)
+
+window.o: window.cpp
+	$(CPP) -c window.cpp -o window.o $(CXXFLAGS)
+
+skybox.o: skybox.cpp
+	$(CPP) -c skybox.cpp -o skybox.o $(CXXFLAGS)
+
+vendor/SOIL/src/image_DXT.o: vendor/SOIL/src/image_DXT.c
+	$(CPP) -c vendor/SOIL/src/image_DXT.c -o vendor/SOIL/src/image_DXT.o $(CXXFLAGS)
+
+vendor/SOIL/src/image_helper.o: vendor/SOIL/src/image_helper.c
+	$(CPP) -c vendor/SOIL/src/image_helper.c -o vendor/SOIL/src/image_helper.o $(CXXFLAGS)
+
+vendor/SOIL/src/SOIL.o: vendor/SOIL/src/SOIL.c
+	$(CPP) -c vendor/SOIL/src/SOIL.c -o vendor/SOIL/src/SOIL.o $(CXXFLAGS)
+
+vendor/SOIL/src/stb_image_aug.o: vendor/SOIL/src/stb_image_aug.c
+	$(CPP) -c vendor/SOIL/src/stb_image_aug.c -o vendor/SOIL/src/stb_image_aug.o $(CXXFLAGS)

@@ -1,0 +1,395 @@
+{
+	"author":"Mufid Jamaluddin",
+	"window":{
+		"title":"Gedung H - Politeknik Negeri Bandung",
+		"position": {
+			"x": 20,
+			"y": 20
+		},
+		"size":{
+			"x": 1000,
+			"y": 1000
+		},
+		"sizeland": 100
+	},
+	"skybox":{
+		"right"	:"assets/skybox/kanan.png",
+		"down"	:"assets/skybox/bawah.png",
+		"front"	:"assets/skybox/depan.png",
+		"left"	:"assets/skybox/kiri.png",
+		"back"	:"assets/skybox/belakang.png",
+		"top"	:"assets/skybox/atas.png"
+	},
+	"default":{
+		"components":{
+			"pillar"		:"assets/components/tembok.jpg",
+			"floorpillar"	:"assets/components/tembok.jpg",
+			"rooffoundation":"assets/components/atap2.jpg",
+			"roof"			:"assets/components/atap2.jpg",
+			"roofpyramid"	:"assets/components/highrise.jpg",
+			"mirrorpolban"	:"assets/components/polbana.jpg",
+			"mirror"		:"assets/components/highrise.jpg",
+			"wall"			:"assets/components/floor.jpg"
+		}
+	},
+	"components":[
+		{
+			"type"		:"wall",
+			"size"		:{"x":24, "y":0.3, "z":25},
+			"translate"	:{"x":12, "y":0, "z":13}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":1, "y":0, "z":2}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":1, "y":0, "z":5}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":1, "y":0, "z":7}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":1, "y":0, "z":10}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":4, "z":1},
+			"translate"	:{"x":2, "y":0, "z":11}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":4, "z":1},
+			"translate"	:{"x":7, "y":0, "z":11}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":8, "z":1},
+			"translate"	:{"x":10, "y":0, "z":11}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":8, "z":1},
+			"translate"	:{"x":14, "y":0, "z":11}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":8, "z":1},
+			"translate"	:{"x":10, "y":0, "z":15}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":8, "z":1},
+			"translate"	:{"x":14, "y":0, "z":15}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":10, "y":0, "z":11}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":15, "y":0, "z":25}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":18, "y":0, "z":25}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":20, "y":0, "z":25}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":23, "y":0, "z":25}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":24, "y":0, "z":23}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":24, "y":0, "z":18}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":24, "y":0, "z":13}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":24, "y":0, "z":8}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":24, "y":0, "z":3}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":23, "y":0, "z":1}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":20, "y":0, "z":1}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":18, "y":0, "z":1}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":13, "y":0, "z":1}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":8, "y":0, "z":1}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":1, "y":16, "z":1},
+			"translate"	:{"x":3, "y":0, "z":1}
+		},
+		
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.3, "y":16, "z":0.3},
+			"translate"	:{"x":4.5, "y":0, "z":10}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.3, "y":16, "z":0.3},
+			"translate"	:{"x":14, "y":0, "z":17.5}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.3, "y":16, "z":0.3},
+			"translate"	:{"x":14, "y":0, "z":19.5}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.3, "y":16, "z":0.3},
+			"translate"	:{"x":14, "y":0, "z":21.5}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.3, "y":16, "z":0.3},
+			"translate"	:{"x":14, "y":0, "z":23.5}
+		},
+
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.3, "y":16, "z":0.3},
+			"translate"	:{"x":24, "y":0, "z":20.5}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.3, "y":16, "z":0.3},
+			"translate"	:{"x":24, "y":0, "z":15.5}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.3, "y":16, "z":0.3},
+			"translate"	:{"x":24, "y":0, "z":10.5}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.3, "y":16, "z":0.3},
+			"translate"	:{"x":24, "y":0, "z":5.5}
+		},
+		
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.3, "y":16, "z":0.3},
+			"translate"	:{"x":15.5, "y":0, "z":1}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.3, "y":16, "z":0.3},
+			"translate"	:{"x":10.5, "y":0, "z":1}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.3, "y":16, "z":0.3},
+			"translate"	:{"x":5.5, "y":0, "z":1}
+		},
+		
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.3, "y":16, "z":0.3},
+			"translate"	:{"x":7, "y":0, "z":11}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.3, "y":16, "z":0.3},
+			"translate"	:{"x":10, "y":0, "z":11}
+		},
+		
+		{
+			"type"		:"pillar",
+			"size"		:{"x":24, "y":0.8, "z":0.8},
+			"translate"	:{"x":12.5, "y":10, "z":1}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":24, "y":0.8, "z":0.8},
+			"translate"	:{"x":12.5, "y":7, "z":1}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":24, "y":0.8, "z":0.8},
+			"translate"	:{"x":12.5, "y":4, "z":1}
+		},
+
+		{
+			"type"		:"rooffoundation",
+			"size"		:{"x":14, "y":1, "z":1},
+			"translate"	:{"x":7, "y":13, "z":12}
+		},		
+		{
+			"type"		:"pillar",
+			"size"		:{"x":14, "y":0.8, "z":0.8},
+			"translate"	:{"x":7, "y":10, "z":11}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":14, "y":0.8, "z":0.8},
+			"translate"	:{"x":7, "y":7, "z":11}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":14, "y":0.8, "z":0.8},
+			"translate"	:{"x":7, "y":4, "z":11}
+		},
+		
+		{
+			"type"		:"rooffoundation",
+			"size"		:{"x":1, "y":1, "z":15},
+			"translate"	:{"x":12, "y":13, "z":18}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.8, "y":0.8, "z":15},
+			"translate"	:{"x":13.5, "y":10, "z":18}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.8, "y":0.8, "z":15},
+			"translate"	:{"x":13.5, "y":7, "z":18}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":0.8, "y":0.8, "z":15},
+			"translate"	:{"x":13.5, "y":4, "z":18}
+		},
+		
+		{
+			"type"		:"pillar",
+			"size"		:{"x":10, "y":0.4, "z":0.4},
+			"translate"	:{"x":19, "y":13, "z":25}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":10, "y":0.8, "z":0.8},
+			"translate"	:{"x":19, "y":10, "z":25}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":10, "y":0.8, "z":0.8},
+			"translate"	:{"x":19, "y":7, "z":25}
+		},
+		{
+			"type"		:"pillar",
+			"size"		:{"x":10, "y":0.8, "z":0.8},
+			"translate"	:{"x":19, "y":4, "z":25}
+		},
+		
+		{
+			"type"		:"mirror",
+			"size"		:{"x":24, "y":16, "z":1},
+			"translate"	:{"x":12, "y":0, "z":2}
+		},
+		{
+			"type"		:"mirror",
+			"size"		:{"x":1, "y":16, "z":11},
+			"translate"	:{"x":2, "y":0, "z":5.5}
+		},
+		{
+			"type"		:"mirror",
+			"size"		:{"x":14, "y":16, "z":1},
+			"translate"	:{"x":7, "y":0, "z":10}
+		},
+		{
+			"type"		:"mirror",
+			"size"		:{"x":1, "y":16, "z":10},
+			"translate"	:{"x":14, "y":0, "z":18.5}
+		},
+		{
+			"type"		:"mirror",
+			"size"		:{"x":10, "y":16, "z":1},
+			"translate"	:{"x":19.5, "y":0, "z":24}
+		},
+		{
+			"type"		:"mirror",
+			"size"		:{"x":1, "y":16, "z":25},
+			"translate"	:{"x":23, "y":0, "z":12.5}
+		},
+		
+		{
+			"type"		:"mirror",
+			"size"		:{"x":1, "y":3, "z":3},
+			"translate"	:{"x":10, "y":5, "z":13}
+		},
+		{
+			"type"		:"mirrorpolban",
+			"size"		:{"x":3, "y":3, "z":1},
+			"translate"	:{"x":12, "y":5, "z":15}
+		},
+		
+		{
+			"type"		: "roofpyramid",
+			"size"		: {"x": 5, "y":4, "z":5},
+			"translate"	: {"x":12, "y":8, "z":13}
+		},
+		
+		{
+			"type"		: "rooffoundation",
+			"size"		: {"x": 16, "y":1.5, "z":11},
+			"translate"	: {"x":8, "y":16, "z":5.5}
+		},
+		{
+			"type"		: "rooffoundation",
+			"size"		: {"x": 10, "y":1.5, "z":25},
+			"translate"	: {"x":19, "y":16, "z":13}
+		},
+		
+		{
+			"type"		: "roof",
+			"size"		: {"x": 15, "y":5, "z":10},
+			"translate"	: {"x":8, "y":17.5, "z":5.5}
+		},
+		{
+			"type"		: "roof",
+			"size"		: {"x": 9, "y":5, "z":24},
+			"translate"	: {"x":19, "y":17.5, "z":13}
+		}
+	]
+}
