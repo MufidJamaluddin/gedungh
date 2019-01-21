@@ -333,9 +333,8 @@ namespace ComponentsGL
 		
 			glTranslated((*component).translate.x, (*component).translate.y, (*component).translate.z);
 			
-			
 			glBindTexture(GL_TEXTURE_2D, (*component).texture);
-			glBegin(GL_TRIANGLES);
+			glBegin(GL_POLYGON);
 				
 				// BAWAH
 				glTexCoord2i(0, 0); glVertex3d(-rx, 0, -rz);
@@ -343,27 +342,41 @@ namespace ComponentsGL
 	  			glTexCoord2i(1, 1); glVertex3d( rx, 0,  rz);
 	  			glTexCoord2i(0, 1); glVertex3d(-rx, 0,  rz);
 
+			glEnd();
+			
+			glBindTexture(GL_TEXTURE_2D, (*component).texture);
+			glBegin(GL_POLYGON);
+
 				// PINGGIR KIRI
-				glTexCoord2i(0, 0); glVertex3d(  0, (*component).size.y, -rz);
-	  			glTexCoord2i(1, 0); glVertex3d(-rx,                   0, -rz);
-	  			glTexCoord2i(1, 1); glVertex3d(-rx,                   0,  rz);
-	  			glTexCoord2i(0, 1); glVertex3d(  0, (*component).size.y,  rz);
+				glTexCoord2i(0, 0); glVertex3d(-rx,                   0, -rz);
+	  			glTexCoord2i(1, 0); glVertex3d(  0, (*component).size.y, -rz);
+	  			glTexCoord2i(1, 1); glVertex3d(  0, (*component).size.y,  rz);
+	  			glTexCoord2i(0, 1); glVertex3d(-rx,                   0,  rz);
+
+			glEnd();
+			
+			glBindTexture(GL_TEXTURE_2D, (*component).texture);
+			glBegin(GL_POLYGON);
 
 				// PINGGIR KANAN
 				glTexCoord2i(0, 0); glVertex3d( 0, (*component).size.y, -rz);
 	  			glTexCoord2i(1, 0); glVertex3d(rx,                   0, -rz);
 	  			glTexCoord2i(1, 1); glVertex3d(rx,                   0,  rz);
 	  			glTexCoord2i(0, 1); glVertex3d( 0, (*component).size.y,  rz);
-
+				
+			glEnd();
+			
+			glBegin(GL_TRIANGLES);
+				
 				// DEPAN
 				glVertex3d(-rx,                   0, rz);
 	  			glVertex3d(  0, (*component).size.y, rz);
 	  			glVertex3d( rx,                   0, rz);
 
 				// BELAKANG
-				glVertex3d(-rx,                   0, rz);
-	  			glVertex3d(  0, (*component).size.y, rz);
-	  			glVertex3d( rx,                   0, rz);
+				glVertex3d(-rx,                   0, -rz);
+	  			glVertex3d(  0, (*component).size.y, -rz);
+	  			glVertex3d( rx,                   0, -rz);
 	  			
 			glEnd();
 			
